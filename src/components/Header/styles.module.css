@@ -1,0 +1,16 @@
+.containerHeader {
+  background: var(--gray-700);
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 73.6rem;
+  margin: 0 auto;
+}
+.containerImage {
+  margin: 0 auto;
+  width: fit-content;
+}
