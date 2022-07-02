@@ -89,7 +89,7 @@
   font-size: 1.4rem;
 }
 
-.taskCreate + p {
+.taskComplete {
   color: var(--purple);
   font-weight: 700;
   font-size: 1.4rem;
@@ -100,4 +100,9 @@
   color: var(--gray-200);
   border-radius: 25%;
   padding: 0 0.5rem;
+  margin-left: 5px;
+}
+
+ul {
+  list-style: none;
 }
