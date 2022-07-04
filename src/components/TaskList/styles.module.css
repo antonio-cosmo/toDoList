@@ -51,17 +51,9 @@
   margin-bottom: 1rem;
 }
 
-
-.containertTasksList {
-  border-radius: 8px;
-  padding: 10px;
-}
-
 .containerMsg{
   border-top: 1px solid var(--gray-400);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 8px;
   height: 25rem;
 
 }
@@ -69,6 +61,7 @@
 .msg{
   text-align: center;
   color: var(--gray-300);
+  margin-top: 8rem;
 }
 
 .msg img{
