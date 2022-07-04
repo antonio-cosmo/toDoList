@@ -6,17 +6,17 @@ interface Task {
   title: string;
   isComplete: boolean;
 }
-interface TaksProps {
+interface TaskProps {
   task: Task;
   onToggleTaskCompletion: (id:string) => void;
   onRemoveTask: (id: string) => void;
 }
-export function Task({task, onToggleTaskCompletion, onRemoveTask}: TaksProps){
+export function Task({task, onToggleTaskCompletion, onRemoveTask}: TaskProps){
   
   return(
     <li>
-      <div className={task.isComplete ? styles.completed : ''} data-testid="task" >
-        <label className={styles['checkbox-container']}>
+      <div className={task.isComplete ? styles.completed : styles.noComplete} data-testid="task" >
+        <label className={styles.checkboxContainer}>
           <input 
             type="checkbox"
             readOnly
@@ -28,7 +28,10 @@ export function Task({task, onToggleTaskCompletion, onRemoveTask}: TaksProps){
         <p>{task.title}</p>
       </div>
 
-      <button type="button" data-testid="remove-task-button" onClick={() => onRemoveTask(task.id)}>
+      <button 
+        className={styles.delete}
+        type="button" 
+        onClick={() => onRemoveTask(task.id)}>
         <img src={imgDelete} alt="excluir" />
       </button>
     </li>

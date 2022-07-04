@@ -40,11 +40,11 @@
   
 }
 
-.containerTask {
+.containerTasks {
   margin-top: 6rem;
 }
 
-.headerTask{
+.headerTasks{
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
@@ -52,12 +52,12 @@
 }
 
 
-.containertTaskList {
+.containertTasksList {
   border-radius: 8px;
   padding: 10px;
 }
 
-.border{
+.containerMsg{
   border-top: 1px solid var(--gray-400);
   display: flex;
   justify-content: center;
@@ -83,19 +83,19 @@
   font-weight: 700;
 }
 
-.taskCreate{
+.countTasks{
   color: var(--blue);
   font-weight: 700;
   font-size: 1.4rem;
 }
 
-.taskComplete {
+.countCompleted {
   color: var(--purple);
   font-weight: 700;
   font-size: 1.4rem;
 }
 
-.headerTask span {
+.headerTasks span {
   background: var(--gray-400);
   color: var(--gray-200);
   border-radius: 25%;
@@ -105,4 +105,19 @@
 
 ul {
   list-style: none;
+}
+
+@media (max-width: 419px){
+  .inputGroup {
+    flex-direction: column;
+  }
+  .inputGroup input {
+    width: 100%;
+  }
+
+  .inputGroup button {
+    width: 7.5rem;
+    height: 4.5rem;
+    padding: 0;
+  }
 }

@@ -4,8 +4,8 @@ export function Header(){
   return (
     <header className={styles.containerHeader}>
       <div className={styles.container}>
-        <div className={styles.containerImage}>
-          <img src={image} alt="Logo" />
+        <div className={styles.image}>
+          <img src={image} alt="lista de tarefas" />
         </div>
       </div>
     </header>
