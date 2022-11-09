@@ -5,7 +5,7 @@ export function Header(){
     <header className={styles.containerHeader}>
       <div className={styles.container}>
         <div className={styles.image}>
-          <img src={image} alt="lista de tarefas" />
+          <img src={image} alt="" />
         </div>
       </div>
     </header>
